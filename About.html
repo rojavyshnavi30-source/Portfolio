@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <style>
+        /* ================= GLOBAL ================= */
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:"Segoe UI", Arial, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(to right,#f7eede,#f6d9b9);
+            color:#333;
+        }
+
+        /* ================= NAVBAR (SAME AS Projects.html) ================= */
+        .navbar{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            padding:25px 60px;
+        }
+
+        .logo{
+            font-size:32px;
+            font-weight:700;
+            color:#7a4a10;
+        }
+
+        .menu{
+            list-style:none;
+            display:flex;
+            gap:50px;
+            margin-left:300px;
+        }
+
+        .menu li a{
+            text-decoration:none;          /* no underline */
+            font-size:18px;
+            color:#5a2ca0;
+            font-weight:500;
+        }
+
+        .menu li a:hover{
+            color:#7a4a10;
+        }
+
+        .contact-btn{
+            margin-left:auto;
+            background:#7a4a10;
+            color:white;
+            padding:12px 25px;
+            border-radius:20px;
+            font-size:16px;
+            text-decoration:none;          /* no underline */
+            cursor:pointer;
+        }
+
+        /* ================= HERO ================= */
+        .hero{
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            padding:60px 80px;
+        }
+
+        .photo-box{
+            width:45%;
+            display:flex;
+            justify-content:center;
+        }
+
+        .photo-border{
+            width:380px;
+            height:380px;
+            border:4px solid #7a4a10;
+            border-radius:50%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .photo-border img{
+            width:330px;
+            height:330px;
+            border-radius:50%;
+            object-fit:cover;
+        }
+
+        .hero-text{
+            width:50%;
+        }
+
+        .hero-text h1{
+            font-size:45px;
+            margin-bottom:10px;
+        }
+
+        .hero-text h2{
+            font-size:35px;
+            margin-top:0;
+        }
+
+        .highlight{
+            color:#7a4a10;
+            font-weight:bold;
+        }
+
+        .hero-text p{
+            width:80%;
+            margin-top:20px;
+            line-height:1.6;
+            font-size:16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">PortFolio.</div>
+
+        <ul class="menu">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About Me</a></li>
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="Skills.html">Skills</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+        </ul>
+
+        <a href="Contact.html" class="contact-btn">Contact</a>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="photo-box">
+            <div class="photo-border">
+                <img src="My image.png" alt="Profile Photo">
+            </div>
+        </div>
+
+        <div class="hero-text">
+            <h1>Hey I'm <span class="highlight">Roja Vyshnavi</span></h1>
+            <h2>I’m a <span class="highlight">Full-stack Python Developer</span></h2>
+
+            <p>
+                I am a Full Stack Python Developer in training with experience in
+                web application development and backend frameworks. I am looking
+                for a Full Stack Developer role to apply my skills and grow professionally.
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>

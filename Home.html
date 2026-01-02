@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #f7eede, #f6d9b9);
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    color: #7a4a10;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-left: 250px;
+    gap: 50px;
+    font-size: 18px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #5a2ca0;
+    font-weight: 500;
+}
+
+.menu li a:hover {
+    color: #7a4a10;
+}
+
+.contact-btn {
+    padding: 12px 25px;
+    background-color: #7a4a10;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ================= HERO ================= */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 80px;
+}
+
+.Intro{
+    display: flex;
+    align-items: center;
+    padding: 60px 80px;
+}
+
+.photo-box {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.photo-border {
+    width: 380px;
+    height: 380px;
+    border: 4px solid #7a4a10;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-border img {
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* RIGHT TEXT */
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 35px;
+    margin-top: 0;
+}
+
+.highlight {
+    color: #7a4a10;
+    font-weight: bold;
+}
+
+.hero-text p {
+    width: 80%;
+    margin-top: 20px;
+    line-height: 1.6;
+    font-size: 16px;
+}
+/* ICONS */
+.icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.icon-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #7a4500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #f7e4d3;
+}
+
+.icon-circle img {
+    width: 60%;        /* fits all icons neatly */
+    height: 60%;
+    margin-left: 8px;
+    justify-content: center;
+    object-fit:contain;
+}
+
+
+/* BUTTON */
+.cv-btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #7a4a10;
+    color: white;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* ================= GLOBAL RESET ================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI", Arial, sans-serif;
+}
+
+html, body{
+    width:100%;
+    height:100%;
+    overflow-x:hidden;
+}
+
+body{
+    background: linear-gradient(to right,#f7eede,#f6d9b9);
+    color:#333;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">PortFolio.</div>
+
+    <ul class="menu">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About Me</a></li>
+        <li><a href="Education.html">Education</a></li>
+        <li><a href="Skills.html">Skills</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+    </ul>
+
+    <a href="Contact.html" class="contact-btn">Contact</a>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+
+    <div class="photo-box">
+        <div class="photo-border">
+            <img src="My image.png" alt="Profile Photo">
+        </div>
+    </div>
+
+    <div class="hero-text">
+        <h1>Hey I'm <span class="highlight">Roja Vyshnavi</span></h1>
+        <h2>I’m a <span class="highlight">Full-stack Python Developer</span></h2>
+
+        <p>
+            I am a Full Stack Python Developer in training with experience in web application
+            development and backend frameworks. I am looking for a Full Stack Developer role
+            to apply my skills and grow professionally.
+        </p>
+
+        <div class="icons">
+            <div class="icon-circle">
+                <a href="https://www.instagram.com/accounts/login/">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+                </a>
+            </div>
+
+            <div class="icon-circle">
+                <a href="https://www.linkedin.com/login/">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+                </a>
+            </div>
+
+            <div class="icon-circle">
+                <a href="https://web.telegram.org/">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
+                </a>
+            </div>
+
+            <div class="icon-circle">
+                <a href="https://accounts.google.com/">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail">
+                </a>
+            </div>
+        </div>
+
+        <button class="cv-btn" onclick="window.location.href='NewResume.docx'">
+            Download CV
+        </button>
+    </div>
+
+</section>
+
+</body>
+</html>

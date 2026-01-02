@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:"Segoe UI", Arial, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(to right,#f7eede,#f6d9b9);
+            color:#333;
+        }
+
+        /* ================= NAVBAR ================= */
+        .navbar{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:25px 60px;
+        }
+
+        .logo{
+            font-size:32px;
+            font-weight:700;
+            color:#7a4a10;
+        }
+
+        .menu{
+            list-style:none;
+            display:flex;
+            gap:50px;
+            margin-left: 280px;
+        }
+
+        .menu li a{
+            text-decoration:none;      /* ❌ underline removed */
+            color:#6a1bb1;
+            font-size:18px;
+            font-weight:500;
+        }
+
+        .menu li a:hover{
+            color:#7a4a10;
+        }
+
+        .contact-btn{
+            background:#7a4a10;
+            color:white;
+            padding:10px 25px;
+            border-radius:25px;
+            font-size:16px;
+            text-decoration:none;      /* ❌ underline removed */
+            cursor:pointer;
+        }
+
+        /* ================= MAIN SECTION ================= */
+        .main{
+            display:flex;
+            align-items:center;
+            padding:60px 10%;
+            gap:80px;
+        }
+
+        .profile{
+            width:300px;
+            height:300px;
+            border-radius:50%;
+            border:4px solid #7a4a10;
+            background:#fff;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+
+        .profile img{
+            width:260px;
+            height:260px;
+            border-radius:50%;
+            object-fit:cover;
+        }
+
+        .skills{
+            max-width:450px;
+            margin-left: 150px;
+        }
+
+        .skills h3{
+            font-size:24px;
+            color:#76d727;
+            margin-bottom:20px;
+        }
+
+        .skills h4{
+            font-size:18px;
+            color:#00abf0;
+            margin-top:20px;
+        }
+
+        .skills ul{
+            list-style:none;
+        }
+
+        .skills li{
+            font-size:14px;
+            margin-top:6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">PortFolio.</div>
+
+        <ul class="menu">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About Me</a></li>
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="Skills.html">Skills</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+        </ul>
+
+        <a href="Contact.html" class="contact-btn">Contact</a>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <section class="main">
+
+        <!-- PROFILE IMAGE -->
+        <div class="profile">
+            <img src="My image.png" alt="Profile Image">
+        </div>
+
+        <!-- CONTACT DETAILS -->
+        <div class="skills">
+            <h3>Contact Details</h3>
+
+            <ul>
+                <h4>Name</h4>
+                <li>P. Roja Vyshnavi</li>
+
+                <h4>Email Address</h4>
+                <li>rojavyshnavi30@gmail.com</li>
+
+                <h4>Mobile Number</h4>
+                <li>7337040317</li>
+            </ul>
+        </div>
+
+    </section>
+
+</body>
+</html>

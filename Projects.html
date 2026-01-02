@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects</title>
+
+<style>
+/* ================= GLOBAL ================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI", Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(to right,#f7eede,#f6d9b9);
+    color:#333;
+}
+
+/* ================= NAVBAR ================= */
+.navbar{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    padding:25px 60px;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:700;
+    color:#7a4a10;
+}
+
+/* MENU */
+.menu{
+    list-style:none;
+    display:flex;
+    gap:50px;
+    margin-left:300px;   /* space before Home */
+}
+
+.menu li a{
+    text-decoration:none;      /* ✅ NO underline */
+    font-size:18px;
+    color:#5a2ca0;
+    font-weight:500;
+}
+
+.menu li a:hover{
+    color:#7a4a10;
+}
+
+/* CONTACT BUTTON */
+.contact-btn{
+    margin-left:auto;          /* push to right */
+    background:#7a4a10;
+    color:white;
+    padding:10px 25px;
+    border-radius:25px;
+    font-size:16px;
+    text-decoration:none;      /* no underline */
+    cursor:pointer;
+}
+
+/* ================= MAIN ================= */
+.main{
+    display:flex;
+    align-items:flex-start;
+    padding:60px 10%;
+    gap:70px;
+}
+
+.profile{
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    border:4px solid #7a4a10;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.profile img{
+    width:260px;
+    height:260px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.projects{
+    max-width:550px;
+    margin-left: 100px;
+}
+
+.projects h2{
+    margin-left:30px;
+    font-size:28px;
+    color:#76d727;
+    margin-bottom:25px;
+}
+
+.project-title{
+    margin-left:30px;
+    font-size:22px;
+    color:#00abf0;
+    margin-top:25px;
+    margin-bottom:10px;
+    font-weight:600;
+}
+
+.projects p{
+    margin-left:30px;
+    font-size:16px;
+    line-height:1.6;
+}
+
+.field{
+    margin-left:30px;
+    font-size:16px;
+    margin-top:6px;
+}
+
+.projects ul{
+    margin-left:60px;
+}
+
+.projects li{
+    font-size:16px;
+    margin-bottom:6px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">PortFolio.</div>
+
+    <ul class="menu">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About Me</a></li>
+        <li><a href="Education.html">Education</a></li>
+        <li><a href="Skills.html">Skills</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+    </ul>
+
+    <a href="Contact.html" class="contact-btn">Contact</a>
+</nav>
+
+<!-- MAIN -->
+<section class="main">
+
+    <div class="profile">
+        <img src="My image.png" alt="Profile Image">
+    </div>
+
+    <div class="projects">
+
+        <h2>Projects</h2>
+
+        <div class="project">
+            <div class="project-title">Static Quiz App (Android)</div>
+            <p>Developed a static quiz application using Android and Java.</p>
+
+            <div class="field"><b>Frontend:</b> Android (XML)</div>
+            <div class="field"><b>Backend:</b> Java</div>
+
+            <ul>
+                <li>Supports 5 programming languages</li>
+                <li>5 difficulty levels per language</li>
+                <li>Score shown after each level</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Credit Card Fraud Detection</div>
+            <p>Machine learning based fraud detection system.</p>
+
+            <div class="field">
+                <b>Tools:</b> Python, NumPy, Pandas, ML
+            </div>
+
+            <ul>
+                <li>Processed transaction datasets</li>
+                <li>Applied ML models</li>
+                <li>Improved detection accuracy</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
